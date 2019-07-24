@@ -1,0 +1,120 @@
+{% include "header.nj" %}
+
+
+<div id="ea_ba">
+
+    <div id="about_banner" class="about_banner">
+
+        <div class="about_banner_m">
+            <img data-original="https://0.rc.xiniu.com/g2/M00/12/6B/CgAGe1mw-KSACauoAANDqtX9OU0768.jpg" alt="">
+        </div>
+    </div>
+
+</div>
+
+
+<div id="ea_c">
+    <div class="n_main">
+        <div class="n_content">
+            <div class="n_content_left">
+
+                <div id="n_content_left_cnt" class="n_content_left_cnt">
+                    <ul id="ShoveWebControl_VMenu2" class="left_typeUl left_typeUl_n000" style="display: block;">
+                        <ul id="left_typeUl_t400" class="left_typeUl left_typeUl_t400">
+                            <li  class="left_menu1 {% if id == 3 %} left_menu1_cur {% endif %} ">
+                                <a href="/business?id=3&level=1">
+                                    <span>业务范围</span>
+                                </a>
+                            </li>
+                            <li  class="left_menu1  {% if id == 4 %} left_menu1_cur {% endif %} ">
+                                <a href="/business?id=4&level=2">
+                                    <span>产品展示</span>
+                                </a>
+                            </li>
+                            <li  class="left_menu1 {% if id == 5 %} left_menu1_cur {% endif %}  ">
+                                <a href="/business?id=5&level=2">
+                                    <span>精品案例</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </ul>
+                  
+
+                </div>
+
+            </div>
+            <div class="n_content_right">
+                        <div class="n_content_right_name">
+
+                            <div id="n_content_right_name_r" class="n_content_right_name_r"> 
+                               
+								
+                            </div>
+
+</div>
+                        <div class="n_content_right_m">
+                            
+<div id="news_view_head" class="news_view_head">
+    <div class="news_view_title">
+        <h1 style="font-size: inherit">
+        <span id="ShoveWebControl_Text2"> {{ medium.name }} </span>
+        </h1>
+    </div>
+    <div class="news_view_date">
+        <span class="news_view_date1">日期：</span>
+        <span id="ShoveWebControl_Text3"> {{ medium.modifyTime }} </span>
+    </div>
+    <div class="news_view_click">
+        <span class="news_view_date1">浏览次数:</span>
+        <span id="ShoveWebControl_Text5" style="display: inline;">{{ medium.readNum }}</span>
+        
+    </div>
+    
+</div>
+
+
+        
+
+
+<div id="news_view" class="news_view">
+   
+    {{ medium.content | safe }}
+    <div class="news_view_cle1"></div>
+    
+</div>
+
+
+<div id="news_view_sx" class="news_view_sx">
+    
+    <div id="EIMS_C_3_1_ShowInfo" style="COLOR: red"></div>
+    <div id="EIMS_C_3_1_box_div">
+        <span id="EIMS_C_3_1_Upli" class="EIMS_C_3_1_page">
+            <a href="/business/detail?id={{id}}&mid={{prevMedium.id}}" id="EIMS_C_3_1_Up">上一篇：<span id="EIMS_C_3_1_UpNew">{{ prevMedium.name }}</span></a>
+        </span>
+            <span id="EIMS_C_3_1_Downli" class="EIMS_C_3_1_page">
+             <a href="/business/detail?id={{id}}&mid={{nextMedium.id}}" id="EIMS_C_3_1_Up">下一篇：<span id="EIMS_C_3_1_UpNew">{{ nextMedium.name }}</span></a>
+            </span>
+    </div>
+    
+    
+    
+</div>
+
+
+
+
+
+
+
+                            <div class="news_view_foot">
+                            </div>
+                        </div>
+                    </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+
+{% include "footer.nj" %}

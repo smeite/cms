@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>建元企业管理后台系统</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="layui/css/layui.css?t=20190723-2" media="all">
+<style>
+
+.ck-editor__editable {
+    min-height: 500px;
+}
+.ck-editor__nested-editable{
+   min-height: 30px;
+}
+</style>
+
+</head>
+
+<body>
+  <div id="LAY_app"></div>
+ <script src="ckeditor/ckeditor.js"></script>
+  <script src="layui/layui.js?t=20190723-1"></script>
+  <script>
+    layui.config({
+      base: '../src/', //指定 layuiAdmin 项目路径，本地开发用 src，线上用 dist
+      version: '1.2.1'
+    }).use('index');
+  </script>
+</body>
+
+</html>

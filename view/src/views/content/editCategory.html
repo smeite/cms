@@ -1,0 +1,70 @@
+<div class="layui-form" lay-filter="LAY-manager-edit" style="padding: 20px 30px 0 0;">
+  <script type="text/html" template>
+    <input type="hidden" name="id" value="{{ d.params.id || '' }}" class="layui-input">
+  </script>
+  <div class="layui-form-item">
+    <label class="layui-form-label">登录名</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="text" name="name" value="{{ d.params.name || '' }}" lay-verify="required" placeholder="请输入用户名"
+          autocomplete="off" class="layui-input">
+      </script>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">手机</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="text" name="phone" value="{{ d.params.phone || '' }}" lay-verify="phone" placeholder="请输入号码"
+          autocomplete="off" class="layui-input">
+      </script>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">邮箱</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="text" name="email" value="{{ d.params.email || '' }}" lay-verify="email" placeholder="请输入邮箱"
+          autocomplete="off" class="layui-input">
+      </script>
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">状态</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="radio" name="sex" value="1" title="男" {{ d.params.sex ? '1' : '' }}>
+        <input type="radio" name="sex" value="0" title="女" {{ d.params.sex ? '0' : '' }}>
+      </script>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">状态</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="radio" name="sex" value="1" title="正常" {{ d.params.status ? '1' : '' }}>
+        <input type="radio" name="sex" value="0" title="禁用" {{ d.params.status ? '0' : '' }}>
+      </script>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label"></label>
+    <div class="layui-input-inline">
+      <input type="button" lay-submit lay-filter="LAY-manager-edit" value="确认" class="layui-btn">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+  layui.use(['admin', 'form'], function () {
+    var $ = layui.$,
+    
+      form = layui.form;
+
+  });
+</script>

@@ -1,0 +1,38 @@
+
+
+  <title>网站设置</title>
+  
+  <div class="layui-card layadmin-header">
+    <div class="layui-breadcrumb" lay-filter="breadcrumb">
+      <a lay-href="">主页</a>
+      <a><cite>网站设置</cite></a>
+      <a><cite>友情链接</cite></a>
+    </div>
+  </div>
+
+  <div class="layui-fluid">
+    <div class="layui-card">
+   
+      <div class="layui-card-body">
+
+ <div style="padding-bottom: 10px;">
+
+        <button class="layui-btn LAY-btn-admin" ID="LAY-link-add" data-type="add">添加</button>
+      </div>
+
+        <table id="LAY-link-list" lay-filter="LAY-link-list"></table> 
+        <script type="text/html" id="imgTpl">
+        <img style="display: inline-block; width: 60%; height: 100%;" src={{ d.pic }}>
+      </script>
+        <script type="text/html" id="LAY-link-operator">
+          <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a>
+          <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>编辑</a>
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  layui.use('link', layui.factory('link'))
+
+  </script>

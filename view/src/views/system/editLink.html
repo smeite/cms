@@ -1,0 +1,68 @@
+<div class="layui-form" lay-filter="LAY-link-edit" style="padding: 20px 30px 0 0;">
+  <script type="text/html" template>
+    <input type="hidden" name="id" value="{{ d.params.id || '0' }}" class="layui-input">
+  </script>
+  <div class="layui-form-item">
+    <label class="layui-form-label">名称</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="text" name="name" value="{{ d.params.name || '' }}" lay-verify="required" placeholder="请输入用户名"
+          autocomplete="off" class="layui-input">
+      </script>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">网址</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="text" name="url" value="{{ d.params.url || '' }}" lay-verify="url" placeholder="请输入网址"
+          autocomplete="off" class="layui-input">
+      </script>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">LOGO</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="text" name="pic" value="{{ d.params.pic || '' }}" lay-verify="url" placeholder="请输入友情链接网站logo"
+          autocomplete="off" class="layui-input">
+      </script>
+    </div>
+  </div>
+
+   <div class="layui-form-item">
+    <label class="layui-form-label">排序</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="number" name="sortNum" value="{{ d.params.sortNum || '' }}"  placeholder="排序，从大到小"
+          autocomplete="off" class="layui-input">
+      </script>
+    </div>
+  </div>
+
+   <div class="layui-form-item">
+    <label class="layui-form-label">备注</label>
+    <div class="layui-input-inline">
+      <script type="text/html" template>
+        <input type="text" name="note" value="{{ d.params.note || '' }}"  placeholder="备注"
+          autocomplete="off" class="layui-input">
+      </script>
+    </div>
+  </div>
+
+
+  <div class="layui-form-item">
+    <label class="layui-form-label"></label>
+    <div class="layui-input-inline">
+      <input type="button" lay-submit lay-filter="LAY-link-edit" value="确认" class="layui-btn">
+    </div>
+  </div>
+</div>
+
+<script>
+  layui.use(['admin', 'form'], function () {
+    var $ = layui.$,
+      form = layui.form;
+
+  });
+</script>

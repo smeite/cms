@@ -1,0 +1,111 @@
+<title>管理员</title>
+
+<div class="layui-card layadmin-header">
+  <div class="layui-breadcrumb" lay-filter="breadcrumb">
+    <a lay-href="#">主页</a>
+    <a><cite>管理员</cite></a>
+  </div>
+</div>
+
+
+<div class="layui-fluid">
+
+  <div class="layui-card">
+
+    <div class="layui-collapse" lay-accordion>
+      <div class="layui-colla-item">
+        <h2 class="layui-colla-title">筛选条件</h2>
+        <div class="layui-colla-content layui-show">
+          <div class="layui-form" lay-filter="LAY-manager-filter">
+            <div class="layui-row layui-col-space10 layui-form-item">
+              <div class="layui-col-lg6">
+                <label class="layui-form-label">员工姓名：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="name" placeholder="" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-col-lg6">
+                <label class="layui-form-label">手机：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="phone" placeholder="" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="layui-form-item">
+              <label class="layui-form-label">性别</label>
+              <div class="layui-input-block">
+                <input type="radio" name="sex" value="1" title="男">
+                <input type="radio" name="sex" value="0" title="女">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">状态</label>
+              <div class="layui-input-block">
+                <input type="radio" name="status" value="1" title="正常">
+                <input type="radio" name="status" value="0" title="禁用">
+              </div>
+            </div>
+
+            <div class="layui-form-item">
+              <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="LAY-manager-filter">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="layui-fluid">
+
+  <div class="layui-card">
+    <div class="layui-card-body">
+      <div style="padding-bottom: 10px;">
+        <button class="layui-btn LAY-btn-admin" id="LAY-manager-batchForbid" data-type="batchForbid">禁用</button>
+        <button class="layui-btn LAY-btn-admin" ID="LAY-manager-add" data-type="add">添加</button>
+      </div>
+
+      <table id="LAY-manager-list" lay-filter="LAY-manager-list"></table>
+      <script type="text/html" id="imgTpl">
+        <img style="display: inline-block; width: 60%; height: 100%;" src={{ d.avatar }}>
+      </script>
+      <script type="text/html" id="statusTpl">
+        {{#  if(d.status == 1){ }}
+        <button class="layui-btn layui-btn-xs">正常</button>
+        {{#  } else { }}
+        <button class="layui-btn layui-btn-primary layui-btn-xs">禁用</button>
+        {{#  } }}
+      </script>
+      <script type="text/html" id="sexTpl">
+        {{#  if(d.sex == 1){ }}
+        <button class="layui-btn layui-btn-xs">男</button>
+        {{#  } else { }}
+        <button class="layui-btn layui-btn-primary layui-btn-xs">女</button>
+        {{#  } }}
+      </script>
+      <script type="text/html" id="table-manager-operate">
+        <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i
+            class="layui-icon layui-icon-edit"></i>编辑</a>
+        {{#  if(d.role == '超级管理员'){ }}
+        <a class="layui-btn layui-btn-disabled layui-btn-xs"><i class="layui-icon layui-icon-delete"></i>禁用</a>
+        {{#  } else { }}
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i
+            class="layui-icon layui-icon-delete"></i>禁用</a>
+        {{#  } }}
+      </script>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  layui.use('manager', layui.factory('manager'))
+</script>

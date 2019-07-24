@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+      {{ seoTitle }}
+    </title>
+    <meta name="keywords" content=" {{ seoKeywords }} "/>
+    <meta name="description" content="{{ seoDesc }}"/>
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <link  rel="stylesheet" type="text/css" href="../public/css/base.css?d=0601"/>
+        <link  rel="stylesheet" type="text/css" href="../public/css/detail.css?d=0601"/>
+            <link  rel="stylesheet" type="text/css" href="../public/css/list.css?d=0601"/>
+                <link  rel="stylesheet" type="text/css" href="../public/css/products.css?d=0601"/>
+    <link rel="bookmark" href="../public/image/logo.ico"/>
+    <link rel="shortcut icon" href="../public/image/logo.ico"/>
+    <script type="text/javascript">var _jtime = new Date();
+
+    function jqload() {
+        window.jLoad = new Date() - _jtime;
+    }
+
+    function jqerror() {
+        window.jLoad = -1;
+    }</script>
+    <script type="text/javascript" src="https://1.rc.xiniu.com/js/jq/jqueryV173.js" id="jquery"></script>
+    <script type = "text/javascript" src = "https://1.rc.xiniu.com/js/pb/1/Public.js" ></script>
+
+</head>
+<body class="index_body">
+   <!-- 头部导航 -->
+   <div id="ea_h">
+        <div class="top">
+            <!-- 顶部 -->
+            <div class="t_t">
+                <div class="t_t01">
+                    <div id="t_tel" class="t_tel">
+                        <span class="t_tel_ts"><span name="_t_tel1|">服务热线:</span></span>
+                        <span class="t_tel_nb"><span name="_t_tel2|">{{ site.telphone }}</span></span>
+                    </div>
+                    
+                    <div id="t_fx" class="t_fx">
+                        <ul>
+                            <li class="t_fx1">
+                                <div><a href="mailto:{{ site.email }}"><span>{{ site.email }}</span></a></div>
+                            </li>
+                           
+                            <li class="t_fx3">
+                                <div><img src="../public/image/wxapp.jpg">
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+             <!-- 导航 -->
+            <div id="ea_n">
+
+                <div id="t_logo" class="t_logo">
+
+                    <div id="ea_l">
+                        <h1>
+                            <a href="/">
+                            <img alt="{{ site.name }}" width="197" height="60"  src="{{ site.logo }}"/>
+                            </a>
+                    </h1>
+                    </div>
+
+
+                </div>
+
+
+                <div id="xn_n_14_wrap" class="xn_n_14_wrap">
+
+                    <div class="xn_n_14_wrap_main">
+                        <ul id="xn_n_14_VMenu1" class="type1Ul type1Ul_n000">
+                            <li   class="xn_n_14_wrap_menu1 {% if channel =="index" %} xn_n_14_wrap_menu1_cur {% endif %} jy_menu">
+                                <a href="/">首页</a>
+                            </li>
+                            <li  class="xn_n_14_wrap_menu1 {% if channel =="company" %} xn_n_14_wrap_menu1_cur {% endif %} jy_menu">
+                                <a href="/company?id=1" >
+                                    <span>关于我们</span>
+                                </a>
+                                <ul id="type1Ul_t101" style="display:none" class="type1Ul type1Ul_t101">
+                                    <li  class="xn_n_14_wrap_menu2" >
+                                        <a href="/company?id=2" >
+                                            <span >公司简介</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li   class="xn_n_14_wrap_menu2">
+                                        <a href="/company?id=9">
+                                            <span>业务介绍</span>
+                                        </a>
+                                    </li>
+                                     <li  class="xn_n_14_wrap_menu2">
+                                        <a href="/company?id=3">
+                                            <span>发展历程</span>
+                                        </a>
+                                    </li>
+                                    <li  class="xn_n_14_wrap_menu2">
+                                        <a href="/company?id=4">
+                                            <span>团队风采</span></a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="xn_n_14_wrap_menu1 {% if channel =="honor" %} xn_n_14_wrap_menu1_cur {% endif %} jy_menu">
+                                <a href="/honor?id=5">
+                                    <span >荣誉资质</span>
+                                </a>
+                                <ul  style="display:none" class="type1Ul type1Ul_t301">
+                                    <li  class="xn_n_14_wrap_menu2">
+                                        <a href="/honor?id=6">
+                                            <span>企业资质</span>
+                                        </a>
+                                    </li>
+                                    <li   class="xn_n_14_wrap_menu2">
+                                        <a href="/honor?id=7">
+                                            <span>合作客户</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="xn_n_14_wrap_menu1 {% if channel =="business" %} xn_n_14_wrap_menu1_cur {% endif %} jy_menu">
+                                <a href="/business?id=3&level=1">
+                                    <span >业务范围</span>
+                                </a>
+                                <ul  style="display:none" class="type1Ul type1Ul_t301">
+                                   
+                                    <li   class="xn_n_14_wrap_menu2">
+                                        <a href="/business?id=4&level=2">
+                                            <span>产品展示</span>
+                                        </a>
+                                    </li>
+                                    <li   class="xn_n_14_wrap_menu2">
+                                        <a href="/business?id=5&level=2">
+                                            <span>精品案例</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="xn_n_14_wrap_menu1 {% if channel =="news" %} xn_n_14_wrap_menu1_cur {% endif %} jy_menu">
+                                <a href="/news?id=6&level=1">
+                                    <span>咨询动态</span>
+                                </a>
+                                <ul  style="display:none" class="type1Ul type1Ul_t301">
+                                    <li  class="xn_n_14_wrap_menu2">
+                                        <a href="/news?id=7&level=2">
+                                            <span>政策法规</span>
+                                        </a>
+                                    </li>
+                                    <li   class="xn_n_14_wrap_menu2">
+                                        <a href="/news?id=8&level=2">
+                                            <span>行业动态</span>
+                                        </a>
+                                    </li>
+                                    <li   class="xn_n_14_wrap_menu2">
+                                        <a href="/news?id=9&level=2">
+                                            <span>公司动态</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="xn_n_14_wrap_menu1 {% if channel =="contact" %} xn_n_14_wrap_menu1_cur {% endif %} jy_menu">
+                                <a href="/contact?id=10">
+                                    <span name="">联系我们</span>
+                                </a>
+                                <ul  style="display:none" class="type1Ul type1Ul_t301">
+                                    <li  class="xn_n_14_wrap_menu2">
+                                        <a href="/contact?id=11">
+                                            <span>联系方式</span>
+                                        </a>
+                                    </li>
+                                    <li   class="xn_n_14_wrap_menu2">
+                                        <a href="/contact?id=12">
+                                            <span>招聘信息</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                         </ul>
+                        <script type="text/javascript">
+                        var xn_n_14_VMenu1 = {
+                            normal: {
+                                class1: 'xn_n_14_wrap_menu1',
+                                class2: 'xn_n_14_wrap_menu2',
+                                class3: 'xn_n_14_wrap_menu3',
+                                class4: 'xn_n_14_wrap_menu4',
+                                class5: 'xn_n_14_wrap_menu5',
+                                class6: 'xn_n_14_wrap_menu6'
+                            },
+                            visited: {
+                                class1: 'xn_n_14_wrap_menu1_2',
+                                class2: 'xn_n_14_wrap_menu2_2',
+                                class3: 'xn_n_14_wrap_menu3_2',
+                                class4: 'xn_n_14_wrap_menu4_2',
+                                class5: 'xn_n_14_wrap_menu5_2',
+                                class6: 'xn_n_14_wrap_menu6_2',
+                                class6: 'xn_n_14_wrap_menu6_2'
+                            },
+                            home: {defaultClass: 'xn_n_14_wrap_menu1', visitedClass: 'xn_n_14_wrap_menu1_2'},
+                            content: {defaultClass: 'xn_n_14_wrap_menu1', visitedClass: 'xn_n_14_wrap_menu1_2', focusClass: ''},
+                            focus: {
+                                class1: 'xn_n_14_wrap_menu1_cur',
+                                class2: 'xn_n_14_wrap_menu2_cur',
+                                class3: 'xn_n_14_wrap_menu3_cur',
+                                class4: 'xn_n_14_wrap_menu4_cur',
+                                class5: 'xn_n_14_wrap_menu5_cur',
+                                class6: 'xn_n_14_wrap_menu6_cur'
+                            },
+                            beforeTag: {packUpClass: '', packDownClass: ''},
+                            expendEffect: 1,
+                            aniEffect: 3,
+                            fIdParam: 'FId',
+                            topUlId: 'xn_n_14_VMenu1',
+                            homeLiId: 'type1Li_n0'
+                        };
+                        xn_n_14_VMenu1.menu = new BaseControlMenu();
+                        xn_n_14_VMenu1.menu.Init('xn_n_14_VMenu1', xn_n_14_VMenu1);
+                        xn_n_14_VMenu1.menu.InitMenu('type1Ul_n000', xn_n_14_VMenu1);</script>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+

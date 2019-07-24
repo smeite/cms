@@ -1,0 +1,290 @@
+﻿.solution_banner_m img {
+  height: 400px;
+  width: 100%;
+}
+
+.solution_banner img {
+  height: 400px;
+  width: 100%;
+}
+
+
+.solution_banner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.solution_banner_m {
+  Z-INDEX: 0;
+  width: 1920px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -960px;
+}
+
+
+
+.n_content_left_cnt {
+  width: 1130px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.n_content_left_cnt ul li ul {
+  display: none !important;
+}
+
+.n_content_left_cnt ul li {
+  margin-right: 20px;
+}
+
+
+
+
+.n_r_wz1,
+.n_r_wz2,
+.n_r_wz3,
+.n_r_wz4,
+.n_r_wz5,
+.n_r_wz6 {}
+
+.n_content_right_name_r a {
+  color: #828282;
+}
+
+.n_content_right_name_r a:hover {
+  color: #f39800;
+}
+
+.n_content_right_name_r ul li {
+  float: right;
+  line-height: 45px;
+}
+
+.n_content_right_name_r ul li img {
+  margin-right: 12px;
+  margin-top: 12px;
+}
+
+
+.n_case_m {
+  width: 108%;
+  overflow: hidden;
+  float: left;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.n_case_main {
+  width: 344px;
+  height: auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin-right: 46px;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 30px;
+}
+
+.n_case_main:hover {
+  background: #04287e;
+}
+
+.n_case_img {
+  width: 100%;
+  height: 176px;
+  overflow: hidden;
+}
+
+.n_case_img img {
+  width: 100%;
+  height: 176px;
+  -webkit-transition: transform 0.5s linear;
+  -moz-transition: transform 0.5s linear;
+  -ms-transition: transform 0.5s linear;
+  -o-transition: transform 0.5s linear;
+  transition: transform 0.5s linear;
+}
+
+.n_case_main:hover img {
+  webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.n_case_main_name {
+  width: 90%;
+  overflow: hidden;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  -moz-binding: url('ellipsis.xml#ellipsis');
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.n_case_main_name a {
+  color: #363636;
+}
+
+.n_case_main:hover a {
+  color: #fff
+}
+
+.n_case_main:hover .n_case_main_name {
+  color: #fff
+}
+
+.n_case_main_cnt {
+  width: 80%;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #636363;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.n_case_main:hover .n_case_main_cnt {
+  color: #fff
+}
+
+.n_case_main_more,
+.n_case_main_name1,
+.n_case_main_cnt1 {
+  display: none;
+}
+
+
+.fy {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0;
+  float: left;
+}
+
+.fy span {
+  display: inline-block;
+  margin-right: 4px;
+  border: 1px solid #d8d8d8;
+}
+
+.fy span,
+.fy span a {
+  color: #828282;
+}
+
+.fy span a:hover {
+  color: #fff;
+  background: #949494;
+}
+
+.fy span a {
+  padding: 5px 7px;
+  display: block;
+}
+
+.fy_on_A {
+  background: #c3c3c3;
+  color: #fff !important;
+}
+
+.fy_1,
+.fy_9,
+.fy_7,
+.fy_3,
+.fy_4 {
+  display: none !important;
+}
+
+
+#ea_ba {
+  min-width: 1130px;
+}
+
+.n_main {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  min-width: 1130px;
+}
+
+.n_content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.n_content_left {
+  width: 100%;
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+
+.n_content_right {
+  position: relative;
+  width: 1130px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+.n_content_right_name {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+.mian_left {
+  width: 290px;
+  height: auto;
+  margin-top: 60px;
+  overflow: hidden;
+  float: left;
+}
+
+.mian_right {
+  width: 826px;
+  height: auto;
+  margin-top: 60px;
+  overflow: hidden;
+  float: right;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.news_view_body .mian_right {
+  margin-bottom: 150px;
+  overflow: initial;
+}
+
+.n_content_right_m {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.width1000 {
+  width: 1000px;
+}

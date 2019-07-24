@@ -1,0 +1,127 @@
+{% include "header.nj" %}
+
+
+<div id="ea_ba">
+
+    <div id="about_banner" class="about_banner">
+
+        <div class="about_banner_m">
+            <img data-original="https://0.rc.xiniu.com/g2/M00/12/6B/CgAGe1mw-KSACauoAANDqtX9OU0768.jpg" alt="">
+        </div>
+    </div>
+
+</div>
+
+
+<div id="ea_c">
+    <div class="n_main">
+        <div class="n_content">
+            <div class="n_content_left">
+
+                <div id="n_content_left_cnt" class="n_content_left_cnt">
+                    <ul id="ShoveWebControl_VMenu2" class="left_typeUl left_typeUl_n000" style="display: block;">
+                        <ul id="left_typeUl_t400" class="left_typeUl left_typeUl_t400">
+                            <li  class="left_menu1 {% if id == 3 %} left_menu1_cur {% endif %} ">
+                                <a href="/business?id=3&level=1">
+                                    <span>业务范围</span>
+                                </a>
+                            </li>
+                            <li  class="left_menu1  {% if id == 4 %} left_menu1_cur {% endif %} ">
+                                <a href="/business?id=4&level=2">
+                                    <span>产品展示</span>
+                                </a>
+                            </li>
+                            <li  class="left_menu1 {% if id == 5 %} left_menu1_cur {% endif %}  ">
+                                <a href="/business?id=5&level=2">
+                                    <span>精品案例</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </ul>
+                  
+
+                </div>
+
+            </div>
+            <div class="n_content_right">
+                <div class="n_content_right_name">
+
+                    <div id="n_content_right_name_r" class="n_content_right_name_r" data-type="block">
+                      
+
+                    </div>
+
+                </div>
+                <div class="n_content_right_m">
+
+                    <div id="n_case_m" class="n_case_m" data-type="block">
+
+                    {% for medium in mediums %}
+                    
+                             <div class="n_case_main">
+                            <div class="n_case_img">
+                            <a target="_blank"  href="/business/detail?id={{id}}&mid={{ medium.id }}">
+                                <img data-original="{{ medium.pic }}" alt="{{ medium.name }}" title="{{ medium.name }}"></a>
+                            </div>
+                            <div class="n_case_main_name">
+                                <span class="n_case_main_name2">
+                                <a target="_blank" title="{{ medium.name }}" href="/business/detail?id={{id}}&mid={{ medium.id }}">              
+                                    <span >{{ medium.name }}</span>             
+                                </a>
+                                </span>
+                            </div>
+
+
+                            <div id="n_case_m1_ctl00_n_case_main_cnt" class="n_case_main_cnt" data-type="block">
+                                <span class="n_case_main_cnt2">
+                                  <span id="n_case_m1_ctl00_ShoveWebControl_Text3"> {{ medium.intro }}</span>
+                                 </span>
+                            </div>
+
+                            <div class="n_case_main_more">
+                            <a target="_blank" title="{{ medium.name }}" href="/business/detail?id={{id}}mid={{ medium.id }}">more&gt;&gt;</a>
+                            </div>
+
+                        </div>
+
+
+                    
+                    {% endfor %}
+
+                       
+                       
+
+                    </div>
+
+
+                    <div id="fy" class="fy" data-type="block">
+                        <div>
+                            <span class="fy_1">共</span>
+                            <span class="fy_9"> {{ total+1 }}</span>
+                            <span class="fy_4">条</span>
+                            <span class="fy_7">页次 {{ currentPage }} /{{ totalPages }}</span>
+                            <span class="fy_3"><a class="fy_3_A" href="/business?id={{id}}&level={{level}}">首页</a></span>
+
+                             {% for i in range(1, totalPages) %}
+                             
+                                 {% if currentPage != i %} 
+                              <span class="fy_2"><a class="fy_2_A" href"/business?id={{id}}&page={{ i }}&level={{level}}">{{ i }}</a></span>
+                                {% endif %}
+                             <span class="fy_on"><a class="fy_on_A">{{i}}</a></span>
+                             {%- endfor %}
+
+                                <span class="fy_5"><a class="fy_6_A" href="/business?id={{id}}&page={{totalPage}}&level={{level}}">尾页</a></span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+
+{% include "footer.nj" %}

@@ -1,0 +1,346 @@
+<title>表单组合</title>
+
+<div class="layui-card layadmin-header">
+    <div class="layui-breadcrumb" lay-filter="breadcrumb">
+        <a lay-href="">主页</a>
+        <a lay-href="content/list"><cite>内容管理</cite></a>
+        <a><cite>添加内容</cite></a>
+    </div>
+</div>
+
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card-header">添加内容</div>
+        <div class="layui-card-body" style="padding: 15px;">
+            <div class="layui-form"  lay-filter="LAY-medium-edit">
+                <input type="hidden" name="id" value="0">
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文章标题</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="name" autocomplete="off" lay-verify="name" placeholder="请输入标题"
+                               class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">头图</label>
+                    <div class="layui-input-inline">
+                        <input name="pic" id="LAY_avatarSrc" placeholder="图片地址" value="" class="layui-input">
+                    </div>
+                    <div class="layui-input-inline layui-btn-container" style="width: auto;">
+                        <button type="button" class="layui-btn layui-btn-primary" id="LAY_avatarUpload">
+                            <i class="layui-icon">&#xe67c;</i>上传图片
+                        </button>
+                        <button class="layui-btn layui-btn-primary" layadmin-event="avatarPreview">查看图片</button>
+                    </div>
+                </div>
+
+     <div class="layui-form-item">
+                    <label class="layui-form-label">添加时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="modifyTime" autocomplete="off" id ="LAY-modifyTime" value="2019-06-06 22:31:23" placeholder="请选择时间"
+                               class="layui-input">
+                    </div>
+                </div>
+
+              <div class="layui-form-item">
+                    <label class="layui-form-label">阅读次数</label>
+                    <div class="layui-input-block">
+                        <input type="number" name="readNum" value="192" autocomplete="off"  placeholder="数字"
+                               class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">分类</label>
+                    <div class="layui-input-block">
+                        <div class="layui-inline">
+                            <select name="firstCateId" lay-filter="LAY-firstCateId" id="LAY-firstCateId"
+                                    lay-verify="required">
+                                <option value="">请选择一级分类</option>
+
+                            </select>
+                        </div>
+                        <div class="layui-inline">
+                            <select name="secondCateId" lay-filter="LAY-secondCateId" id="LAY-secondCateId"
+                                    lay-verify="required">
+                                <option value="">请选择二级分类</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">排序</label>
+                    <div class="layui-input-block">
+                        <input type="number" name="sortNum" value="1" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">状态</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="status" value="1" title="发布" checked="">
+                        <input type="radio" name="status" value="0" title="草稿">
+                    </div>
+                </div>
+
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">SEO标题</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="seoTitle" placeholder="SEO标题,为搜索引擎使用，放在网站的title上 " autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">SEO关键词</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="seoKeywords" placeholder="SEO关键词，以，为间隔" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">SEO描述</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="seoDesc" placeholder="SEO描述" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">简介</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="intro" placeholder="简要描述" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item layui-form-text">
+                 <label class="layui-form-label">内容</label>
+                   <div class="layui-input-block">
+                      <textarea name="content" placeholder="" class="layui-textarea" id="LAY-content" style="border:0;padding:0;height:800px"></textarea>
+                    </div>
+                </div>
+
+                 <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">备注</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="note" placeholder="备注说明" autocomplete="off" class="layui-input">
+
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <div class="layui-footer">
+                            <button class="layui-btn" lay-submit lay-filter="LAY-medium-submit">立即提交</button>
+
+                        </div>
+                    </div>
+                </div>
+
+    
+        </div>
+    </div>
+</div>
+
+
+<script>
+ 
+  var editor;
+  ClassicEditor.create( document.querySelector( '#LAY-content' ),{
+       ckfinder: {
+                   // uploadUrl :'http://localhost:7001/admin/editorUpload?command=QuickUpload&type=Files&responseType=json',
+                    uploadUrl :'http://www.jykj-cd.com/admin/editorUpload?command=QuickUpload&type=Files&responseType=json',
+					//后端处理上传逻辑返回json数据,包括uploaded(选项true/false)和url两个字段
+                }
+  } ).then( newEditor => {
+        editor = newEditor;
+       
+    } )
+    .catch( error => {
+        console.error( error );
+    } );   
+
+layui.use(['admin', 'form', 'upload'], function(){
+    var $ = layui.$,
+        admin = layui.admin,
+        element = layui.element,
+        layer = layui.layer,
+        setter = layui.setter,
+        upload = layui.upload,
+        form = layui.form;
+
+         var id = layui.router().search.id;
+    if (id) {
+        admin.req({
+            url: setter.request.host + '/admin/medium/show',
+            method: "get",
+            data: {
+                id: id
+            },
+            done: function (res) {
+                form.render();
+                var cate1Option = '<option value="' + res.data.firstCateId + '" selected>' + res.data.firstCateName + '</option>'
+                var cate2Option = '<option value="' + res.data.secondCateId + '" selected>' + res.data.secondCateName + '</option>'
+                $("#LAY-firstCateId").append(cate1Option)
+                $("#LAY-secondCateId").append(cate2Option)
+
+                  editor.setData(res.data.content)
+                form.val("LAY-medium-edit", res.data)
+            }
+        })
+
+    } else {
+        form.render();
+    }
+
+
+    /* 处理头图 */
+    var avatarSrc = $('#LAY_avatarSrc');
+
+    upload.render({
+        url: setter.request.host + '/admin/upload',
+        headers: {
+            "token": layui.data(setter.tableName)[setter.request.tokenName]
+        },
+        elem: '#LAY_avatarUpload',
+        done: function (res) {
+
+            console.log(res)
+
+            if (res.code == 200) {
+                avatarSrc.val(res.data.src);
+            } else {
+                layer.msg(res.msg, {
+                    icon: 5
+                });
+            }
+        }
+    });
+
+    admin.events.avatarPreview = function (othis) {
+        var src = avatarSrc.val();
+        layer.photos({
+            photos: {
+                "title": "查看头图", //相册标题
+                "data": [{
+                    "src": src //原图地址
+                }]
+            },
+            shade: 0.01,
+            closeBtn: 1,
+            anim: 5
+        });
+    };
+
+
+
+
+
+    /* 表单处理 */
+    form.render();
+
+    /* 自定义验证规则 */
+    form.verify({
+        name: function (value) {
+            if (value.length < 3) {
+                return '标题至少得3个字符啊';
+            }
+        },
+        content: function (value) {
+            //  layedit.sync(editor);
+        }
+    });
+
+
+    var categories = new Array();
+
+    admin.req({
+        url: setter.request.host + '/admin/category/list',
+        method: "get",
+        done: function (res) {
+            categories = res.data
+            var options = ""
+            categories.forEach(e => {
+                if (e.pid === 0) {
+                    options += '<option value="' + e.id + '">' + e.name + '</option>'
+                }
+            })
+
+            $("#LAY-firstCateId").append(options)
+            form.render('select')
+        }
+    })
+
+    // 分类联动
+    var firstCateName = ""
+    form.on('select(LAY-firstCateId)', function (data) {
+        var parentId = data.value
+        console.log("parentId", parentId)
+        if (parentId == "") {
+            layer.alert("请选择分类")
+        } else {
+            var options = "";
+            categories.forEach(e => {
+
+                if (e.id == Number.parseInt(parentId)) {
+                    firstCateName = e.name
+                }
+                if (e.pid == Number.parseInt(parentId)) {
+                    options += '<option value="' + e.id + '">' + e.name + '</option>'
+                }
+            })
+            console.log("options", options)
+            $("#LAY-secondCateId").append(options)
+            form.render('select')
+        }
+    })
+    // 二级联动监听
+    var secondCateName = ""
+    form.on('select(LAY-secondCateId)', function (data) {
+        var firstCateId = $("#LAY-firstCateId").val()
+        var secondCateId = data.value
+
+        console.log("firstCateId", firstCateId)
+        if (firstCateId == "") {
+            layer.alert("请选择一级分类")
+        } else {
+            categories.forEach(e => {
+                if (e.id === Number.parseInt(secondCateId)) {
+                    secondCateName = e.name
+                }
+            })
+        }
+    })
+
+
+    /* 监听提交 */
+    form.on('submit(LAY-medium-submit)', function (obj) {
+
+        // var content = editor.txt.html()
+
+        var medium = obj.field;
+        medium['firstCateName'] = firstCateName;
+        medium['secondCateName'] = secondCateName;
+        medium['content'] = editor.getData();
+        console.log("medium", medium)
+        layer.msg("提交成功")
+        //提交修改
+        admin.req({
+            url: setter.request.host + '/admin/medium/edit',
+            method: 'post',
+            data: medium,
+            done: function () {
+                form.render()
+                layer.msg("提交成功")
+            }
+        });
+
+
+    });
+});
+</script>
+
+

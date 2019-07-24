@@ -1,0 +1,299 @@
+ 
+ {% include "header.nj" %}
+
+ 
+
+   <!--  banner -->
+    <div id="ea_ba">
+
+        <div id="xn_ba_js_13_banner" class="xn_ba_js_13_banner">
+            <em id="xn_ba_js_13_prev" class="xn_ba_js_13_prev"></em>
+
+            <div class="xn_ba_js_13_element">
+                <div class="xn_ba_js_13_bigImg">
+                    <a href="/company?id=1" name="1" target="_blank">
+                        <img alt="" data-original="https://0.rc.xiniu.com/g2/M00/41/CD/CgAGfFzZMkSAP1MtAAPJA7M1q3c634.jpg">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="xn_ba_js_13_element" frameindex="2">
+                <div class="xn_ba_js_13_bigImg">
+                    <a href="/honor?id=5" name="2" target="_blank">
+                        <img alt="" data-original="https://0.rc.xiniu.com/g2/M00/CF/A1/CgAGfFt-P7-AUl-ZAAN3zk20AwQ427.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="xn_ba_js_13_element" frameindex="3">
+                <div class="xn_ba_js_13_bigImg">
+                    <a href="/business?id=3&level=1" name="3" target="_blank">
+                        <img alt=""
+data-original="https://0.rc.xiniu.com/g2/M00/CF/A1/CgAGfFt-P9eAAAtCAAGKYt2R_d0912.jpg"
+                                                                                                             rel="b"></a>
+                </div>
+            </div>
+
+
+            <em id="xn_ba_js_13_next" class="xn_ba_js_13_next"></em>
+            <ul class="xn_ba_js_13_btn">
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+   <!-- 中间内容 -->
+
+    
+
+    <div id="ea_c">
+        <div class="index_cnt">
+            <div class="index_cnt_m">
+                <div class="index_cnt_m01">
+
+                    <div id="xn_c_index_39_wrap" class="xn_c_index_39_wrap" data-type="block">
+
+                        <div class="xn_c_index_39_topbox">
+                            <span class="xn_c_index_39_news_t1">
+                                <span name="_index_39_news_t1">政策法规</span>
+                            </span>
+                            <span class="xn_c_index_39_news_t2">
+                                
+                                <span name="_index_39_news_t2">/</span>
+                                
+                            </span>
+                            <span class="xn_c_index_39_news_t3">
+                                
+                                <span name="_index_39_news_t3">News</span>
+                                
+                            </span>
+                        </div>
+                        <div class="xn_c_index_39_nrbox">
+
+                            {% for medium in policies %}
+
+                             <div class="xn_c_index_39_nrboxsmall">
+                               {% if loop.first %}
+                                <div class="xn_c_index_39_lftbox">
+                                    <a href='/news/detail?id=7&mid={{medium.id}}' target="_blank">
+                                        <img data-original='{{ medium.pic }}'
+                                             alt='{{ medium.name }}' title=' {{ medium.name }} '/>
+                                    </a>
+                                </div>
+                                 {% endif %}
+                                <div class="xn_c_index_39_ritbox">
+                                    <div class="xn_c_index_39_title">
+                                        <a href='/news/detail?id=7&mid={{medium.id}}' target="_blank">
+                                            {{ medium.name }}
+                                        </a>
+                                    </div>
+                                    <div class="xn_c_index_39_time">
+                                            <span class="xn_c_index_39_date1">
+                                            <span id='xn_c_index_39_Data_ctl00_xn_c_index_39_Text1'> {{ medium.modifyTime }} </span>
+                                            </span>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                         
+                            {% endfor %}
+
+                           
+
+                        </div>
+                        <div class="xn_c_index_39_newsmore">
+                                
+                                <span name="_index_39_newsmore">
+                                <a href="/news?id=7&level=2">查看更多</a>
+                                </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div id="xn_c_index_391_wrap" class="xn_c_index_391_wrap" data-type="block">
+
+                        <div class="xn_c_index_391_topbox">
+                            <span class="xn_c_index_391_news_t1">
+                                <span name="_index_391_news_t1">行业资讯</span>
+                            </span>
+                            <span class="xn_c_index_391_news_t2">
+                                
+                                <span name="_index_391_news_t2">/</span>
+                                
+                            </span>
+                            <span class="xn_c_index_391_news_t3">
+                                
+                                <span name="_index_391_news_t3">News</span>
+                                
+                            </span>
+                        </div>
+                        <div class="xn_c_index_391_nrbox">
+
+                    
+                        
+                        {% for medium in news %}
+                            <div class="xn_c_index_391_nrboxsmall">
+                             {% if loop.first %}
+                                <div class="xn_c_index_391_lftbox">
+                                    <a href='/news/detail?id=8&mid={{medium.id}}' target="_blank">
+                                        <img data-original='{{ medium.pic }}'
+                                             alt='{{ medium.name }}'
+                                             title='{{ medium.nmae }}'/>
+                                    </a>
+                                </div>
+                                 {% endif %}
+                                <div class="xn_c_index_391_ritbox">
+                                    <div class="xn_c_index_391_title">
+                                        <a href='/news/detail?id=8&mid={{medium.id}}' target="_blank">
+                                            {{ medium.name }}
+                                        </a>
+                                    </div>
+                                    <div class="xn_c_index_391_time">
+                                            <span class="xn_c_index_391_date1">
+                                            <span id='xn_c_index_391_Data_ctl00_xn_c_index_391_Text1'> {{ medium.modifyTime }} </span>
+                                            </span>
+                                       
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                           {% endfor %}    
+
+                            
+
+                        </div>
+                        <div class="xn_c_index_391_newsmore">
+                                
+                                <span name="_index_391_newsmore">
+                                <a href="/news?id=8&level=2">查看更多</a>
+                                </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div id="index_cnt_m_about" class="index_cnt_m_about" data-type="block">
+
+                        <div class="index_about_f">
+                            <div class="index_cnt_m_about_t">
+                            <span class="i_about_t1">
+                                
+                                <span name="701">公司简介 </span>
+                                
+                            </span><span class="i_about_t2">
+                                
+                                <span name="702">About us</span>
+                                
+                            </span><span class="i_about_t3">
+                                
+                                <span name="703"></span>
+                                
+                            </span>
+                            </div>
+                            <div class="index_cnt_m_about_cnt">
+                                <img class="i_about_img" src="{{ aboutUs.pic }}"
+                                     alt="{{ aboutUs.name }}"/>
+                                <span class="i_about_tit"> <span>承德建元科技有限公司 </span></span>
+                                <span class="i_about_cnt" ej="edit_span">
+                                <span id='ShoveWebControl_Text1'>{{ aboutUs.intro }}</span>
+                            </span>
+                            </div>
+                            <div class="index_cnt_m_about_more"><a href="/company?id=1">查看更多</a></div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+
+                <div id="xn_c_index_45_wrap" class="xn_c_index_45_wrap" data-type="block">
+
+                    <div class="xn_c_index_45_box">
+                        <div class="xn_c_index_45_topbox">
+                             <span class="xn_c_index_45_abt_t1"> 
+                                 <span name="_index_45_abt_t1">关于我们</span>
+                             </span>
+                            <span class="xn_c_index_45_abt_t2">
+                                  
+                                 <span name="_index_45_abt_t2">Abou US</span> 
+                                  
+                             </span>
+                            <span class="xn_c_index_45_abt_t3">
+                                 
+                                <span name="_index_45_abt_t3"></span> 
+                                  
+                             </span>
+                        </div>
+                        <div class="xn_c_index_45_nrbox">
+                            <div class="xn_c_index_45_jieshaobox">
+
+                                <span name="_index_45_abt_t10"> {{ aboutUs.intro }} </span>
+
+                            </div>
+                            <div class="xn_c_index_45_more">
+                                <a href="/company?id=1">
+
+                                    <span name="_index_45_more">More</span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="index_cnt_m02">
+
+                    <div class="index_cnt01">
+                        <ul>
+                            <li>
+                            <a href="/honor?id=6">
+                            <img src="../public/image/index_cnt0101.png">
+                                <span >公司资质</span>
+                            </a>
+                            </li>
+                            <li>
+                            <a href="/business?id=3&level=1">
+                            <img src="../public/image/index_cnt0102.png">
+                                <span name="_index_201_cnName2">业务范围</span>
+                            </a>
+                            </li>
+                            <li>
+                            <a href="/news?id=9&level=2">
+                            <img src="../public/image/index_cnt0103.png">
+                                <span name="_index_201_cnName3">公司动态</span>
+                            </a>
+                            </li>
+                            <li>
+                            <a href="/business?id=4&level=2">
+                            <img src="../public/image/index_cnt0104.png">
+                                <span name="_index_201_cnName3">产品展示</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+   <!-- 底部处理 -->
+      {% include "footer.nj" %}

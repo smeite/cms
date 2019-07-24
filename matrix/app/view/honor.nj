@@ -1,0 +1,76 @@
+{% include "header.nj" %}
+
+
+  <div id="ea_ba">
+
+            <div id="solution_banner" class="solution_banner">
+                <div class="solution_banner_m">
+                    <img data-original="https://0.rc.xiniu.com/g2/M00/17/9E/CgAGfFm7qHuAUYRMAAN3qK1Tous296.jpg" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+
+  </div>      
+
+    <div id="ea_c">
+        <div class="n_main">
+            <div class="n_content">
+                <div class="n_content_left">
+
+                    <div id="n_content_left_cnt" class="n_content_left_cnt">
+                        <ul id="ShoveWebControl_VMenu2" class="left_typeUl left_typeUl_n000">
+                            <ul id="left_typeUl_t200" class="left_typeUl left_typeUl_t200">
+                                 <li  class="left_menu1  {% if id == 5 %} left_menu1_cur {% endif %} ">
+                                <a href="/honor?id=5"><span>荣誉资质</span></a>
+                                </li>
+                                 <li  class="left_menu1 {% if id == 6 %} left_menu1_cur {% endif %} ">
+                                <a href="/honor?id=6"><span>企业资质</span></a>
+                                </li>
+                                 <li  class="left_menu1  {% if id == 7 %} left_menu1_cur {% endif %} ">
+                                <a href="/honor?id=7"><span>合作客户</span></a>
+                                </li>
+                                
+                            </ul>
+                        </ul>
+                    
+
+                    </div>
+
+                </div>
+                <div class="n_content_right">
+                    <div class="n_content_right_name">
+
+                        <div id="n_content_right_name_r" class="n_content_right_name_r">
+                           
+
+                        </div>
+
+                    </div>
+                    <div class="n_content_right_m">
+
+
+
+                       
+
+                        <div id="news_view" class="news_view">
+                            <span id='ShoveWebControl_Text4'>
+                             {{ medium.content | safe }}
+                            </span>
+                           
+                            <div class="news_view_cle1"></div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include "footer.nj" %}

@@ -1,0 +1,231 @@
+
+   <!-- 底部处理 -->
+    <div id="ea_b">
+        <div class="foot">
+            <div class="foot01">
+
+                <div id="foot_nav" class="foot_nav">
+                    <ul id="ShoveWebControl_VMenu3" class="foot_type1Ul foot_type1Ul_n000">
+                        <li id="foot_type1Li_n1"  class="foot_menu1">
+                            <a href="/company?id=1">
+                                <span>关于我们</span></a>
+                            <ul id="foot_type1Ul_t101" class="foot_type1Ul foot_type1Ul_t101">
+                                <li id="foot_type1Li_t101_1" class="foot_menu2">
+                                    <a href="/company?id=2">
+                                        <span>公司简介</span></a>
+                                </li>
+                                <li id="foot_type1Li_t101_2"  class="foot_menu2">
+                                    <a href="/honor?id=6">
+                                        <span>企业资质</span></a>
+                                </li>
+                                <li id="foot_type1Li_t101_3"  class="foot_menu2">
+                                    <a href="/honor?id=7">
+                                        <span>合作客户</span>
+                                    </a>
+                                </li>
+                            </ul>
+                           
+                        </li>
+                        <li id="foot_type1Li_n3"  class="foot_menu1">
+                            <a href="/business?id=8&level=1">
+                                <span >业务范围</span>
+                            </a>
+                            <ul id="foot_type1Ul_t301" class="foot_type1Ul foot_type1Ul_t301">
+
+                                <li id="foot_type1Li_t301_1" class="foot_menu2">
+                                    <a href="/business?id=4&level=2" >
+                                        <span>产品展示</span></a>
+                                </li>
+                                <li id="foot_type1Li_t301_2"  class="foot_menu2">
+                                    <a href="/business?id=5&level=2">
+                                        <span>精品案例</span></a>
+                                </li>
+                               
+
+                            </ul>
+                        </li>
+                  
+                    </ul>
+                    <script type="text/javascript">var ShoveWebControl_VMenu3 = {
+                        normal: {
+                            class1: 'foot_menu1',
+                            class2: 'foot_menu2',
+                            class3: '',
+                            class4: '',
+                            class5: '',
+                            class6: ''
+                        },
+                        visited: {
+                            class1: 'foot_menu1',
+                            class2: 'foot_menu2',
+                            class3: '',
+                            class4: '',
+                            class5: '',
+                            class6: '',
+                            class6: ''
+                        },
+                        home: {defaultClass: 'foot_menu1', visitedClass: 'foot_menu1_2'},
+                        content: {defaultClass: '', visitedClass: '', focusClass: ''},
+                        focus: {
+                            class1: 'foot_menu1',
+                            class2: 'foot_menu2',
+                            class3: 'foot_menu3',
+                            class4: 'foot_menu4',
+                            class5: 'foot_menu5',
+                            class6: 'foot_menu6'
+                        },
+                        beforeTag: {packUpClass: '', packDownClass: ''},
+                        expendEffect: 1,
+                        aniEffect: 1,
+                        fIdParam: 'FId',
+                        topUlId: 'ShoveWebControl_VMenu3'
+                    };
+                    ShoveWebControl_VMenu3.menu = new BaseControlMenu();
+                    ShoveWebControl_VMenu3.menu.Init('ShoveWebControl_VMenu3', ShoveWebControl_VMenu3);
+                    ;</script>
+
+                </div>
+
+
+                <div id="foot_tel" class="foot_tel">
+                    <div class="foot_zip">
+                        <span name="_foot_tel4|">联系方式</span>
+                    </div>
+                    <div class="foot_tel_f">
+                        <div class="foot_phone">
+                            <span name="_foot_tel2|">电话：{{ site.telphone }} </span>
+                        </div>
+                        <div class="foot_fax">
+                            <span name="_foot_tel3|">邮箱：{{ site.email }} </span>
+                        </div>
+                        <div class="foot_add">
+                            <span name="_foot_tel1|">地址： {{ site.address }} </span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="xn_f_3_wrap" id="xn_f_3_wrap">
+                    <div class="xn_f_3_chat">
+                        <div class="xn_f_3_right">
+                            <img src="../public/image/wxapp.jpg">
+                        </div>
+                        <div class="xn_f_3_telphone">
+                            <div class="xn_f_3_telphone1">
+
+                                <span>全国统一客服电话：</span>
+
+                            </div>
+                           
+                            <div class="xn_f_3_telphone2">
+                                <span >0314-7068555</span>
+                            </div>
+                             <div class="xn_f_3_telphone2">
+                                <span >0314-5912777</span>
+                            </div>
+                            <div class="xn_f_3_fx">
+                                <div class="bdsharebuttonbox">
+                                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                <a href="#" class="bds_tsina"  data-cmd="tsina" title="分享到新浪微博"></a> 
+                                <a href="#"  class="bds_weixin"  data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <script>
+                                    window._bd_share_config = {
+                                    "common": {
+                                        "bdSnsKey": {},
+                                        "bdText": "",
+                                        "bdMini": "2",
+                                        "bdMiniList": false,
+                                        "bdPic": "",
+                                        "bdStyle": "2",
+                                        "bdSize": "24"
+                                    }, "share": {}
+                                };
+</script>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="clear"></div>
+
+            <div class="xn_f_18_wrap" id="xn_f_18_wrap">
+
+                <div class="xn_f_18_wbox">
+
+                    <div class="xn_f_18_xhbigbox">
+                        <div class="xn_f_18_lbbox">
+                            友情链接:
+                        </div>
+                        {% for link in links %}
+                            <div class="xn_f_18_nrbox">
+                               <a rel="nofollow" target="_blank" href='{{ link.url }}'>
+                                {{ link.name }}
+                               </a>
+                            </div>
+                        {% endfor %}
+
+
+                    
+
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+
+
+            </div>
+
+            <div class="foot_c">
+
+                <div id="t_logo01" class="t_logo01">
+
+                    <div id="ea_l">
+                        <a href="/" target="_self">
+                            <img alt="" src="../public/image/logobig.png"/></a>
+                    </div>
+
+
+                </div>
+
+
+                <div id="foot_copy" class="foot_copy">
+                    <div class="foot_copy_name">
+                        <span > {{ site.copyright }} </span>
+                    </div>
+                    <div class="foot_copy_ba">
+                        <a rel="nofollow" href="http://www.miitbeian.gov.cn" target="_blank">
+                            <span > {{ site.icp }}</span>
+                        </a>
+                    </div>
+                    <div class="foot_copy_ba"><a href="/sitemap.xml" class="foot_copy_map" target="_blank">&nbsp;&nbsp;网站地图</a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+   <script id="js__index" type="text/javascript" src="https://0.rc.xiniu.com/g2/M00/B1/5A/CgAGe1tmkBiAejD2AAAgwEhwER81115.js?d=20180805140838" ></script>
+
+   <div class='mobile_hide' style='position:fixed;z-index:60000;display:none;right:20px;top:150px;;width:100px; height:100px;' isDualCore='0' id='qrcode'>
+       <img  data-original='../public/image/wxapp.jpg' src='../public/image/wxapp.jpg' alt='亲，扫一扫<br/>关注公众号' width='100' height='100' />
+       <div style=' font-family:微软雅黑; font-size:12px; line-height:16px; padding:0 8px; background-color:#fff; text-align:center;'>亲，扫一扫<br/>关注公众号</div>
+   </div>
+   <script type='text/javascript'>
+       if (self.frameElement && self.frameElement.tagName == 'IFRAME') {
+           $(window.parent.document).find('body').append(document.getElementById('qrcode').outerHTML);
+           document.getElementById('qrcode').outerHTML = '';
+       }
+   </script>
+
+</body>
+</html>
+

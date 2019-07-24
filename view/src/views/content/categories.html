@@ -1,0 +1,35 @@
+
+
+  <title>文章列表</title>
+  
+  <div class="layui-card layadmin-header">
+    <div class="layui-breadcrumb" lay-filter="breadcrumb">
+      <a lay-href="">主页</a>
+      <a><cite>内容管理</cite></a>
+      <a><cite>分类列表</cite></a>
+    </div>
+  </div>
+
+  <div class="layui-fluid">
+    <div class="layui-card">
+   
+      <div class="layui-card-body">
+        <table id="LAY-category-list" lay-filter="LAY-category-list"></table> 
+        <script type="text/html" id="buttonTpl">
+          {{#  if(d.status){ }}
+            <button class="layui-btn layui-btn-xs">已发布</button>
+          {{#  } else { }}
+            <button class="layui-btn layui-btn-primary layui-btn-xs">待修改</button>
+          {{#  } }}
+        </script>
+        <script type="text/html" id="LAY-category-operator">
+          <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>编辑</a>
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  layui.use('category', layui.factory('category'))
+
+  </script>

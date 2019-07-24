@@ -1,0 +1,97 @@
+<title>管理员</title>
+
+<div class="layui-card layadmin-header">
+  <div class="layui-breadcrumb" lay-filter="breadcrumb">
+    <a lay-href="#">主页</a>
+    <a><cite>管理员</cite></a>
+  </div>
+</div>
+
+
+<div class="layui-fluid">
+
+  <div class="layui-card">
+   
+    <div class="layui-collapse" lay-accordion>
+      <div class="layui-colla-item">
+        <h2 class="layui-colla-title">筛选条件</h2>
+        <div class="layui-colla-content layui-show">
+          <div class="layui-form" lay-filter="LAY-medium-filter">
+            
+         <div class="layui-form-item">
+                    <label class="layui-form-label">分类</label>
+                    <div class="layui-input-block">
+                        <div class="layui-inline">
+                            <select name="firstCateId" lay-filter="LAY-firstCateId" id="LAY-firstCateId"
+                                    lay-verify="required">
+                                <option value="">请选择一级分类</option>
+
+                            </select>
+                        </div>
+                        <div class="layui-inline">
+                            <select name="secondCateId" lay-filter="LAY-secondCateId" id="LAY-secondCateId"
+                                    lay-verify="required">
+                                <option value="">请选择二级分类</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">状态</label>
+              <div class="layui-input-block">
+                <input type="radio" name="status" value="1" title="正常">
+                <input type="radio" name="status" value="0" title="禁用">
+              </div>
+            </div>
+
+            <div class="layui-form-item">
+              <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="LAY-medium-filter">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="layui-fluid">
+
+  <div class="layui-card">
+    <div class="layui-card-body">
+      <div style="padding-bottom: 10px;">
+       
+        <a lay-href="content/edit" class="layui-btn LAY-btn-admin" id="LAY-medium-add" data-type="add">添加</a>
+      </div>
+
+      <table id="LAY-medium-list" lay-filter="LAY-medium-list"></table>
+      <script type="text/html" id="picTpl">
+        <img style="display: inline-block; width: 60%; height: 100%;" src={{ d.pic }}>
+      </script>
+      <script type="text/html" id="statusTpl">
+        {{#  if(d.status == 1){ }}
+        <button class="layui-btn layui-btn-xs">正常</button>
+        {{#  } else { }}
+        <button class="layui-btn layui-btn-primary layui-btn-xs">草稿</button>
+        {{#  } }}
+      </script>
+      
+       <script type="text/html" id="LAY-medium-operate">
+          <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a>
+          <a lay-href="content/edit/id={{d.id}}" class="layui-btn layui-btn-normal layui-btn-xs" ><i class="layui-icon layui-icon-edit"></i>编辑</a>
+        </script>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+  layui.use('medium', layui.factory('medium'))
+</script>

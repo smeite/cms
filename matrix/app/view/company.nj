@@ -1,0 +1,78 @@
+{% include "header.nj" %}
+
+
+   <div id="ea_ba">
+			
+            <div id="about_banner" class="about_banner">
+
+                <div class="about_banner_m">
+                    <img data-original="../public/image/ibpsp1_about_banner.jpg?d=20151110153928" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+    <div id="ea_c">
+        <div class="n_main">
+            <div class="n_content">
+                <div class="n_content_left">
+
+                    <div id="n_content_left_cnt" class="n_content_left_cnt">
+                        <ul id="ShoveWebControl_VMenu2" class="left_typeUl left_typeUl_n000" >
+                            <ul id="left_typeUl_t200" class="left_typeUl left_typeUl_t200">
+                                <li  class="left_menu1  {% if id == 1 %} left_menu1_cur {% endif %} ">
+                                <a href="/company?id=1"><span>关于我们</span></a>
+                                </li>
+                                 <li  class="left_menu1 {% if id == 2 %} left_menu1_cur {% endif %} ">
+                                <a href="/company?id=2"><span>公司简介</span></a>
+                                </li>
+                                 <li  class="left_menu1  {% if id == 9 %} left_menu1_cur {% endif %} ">
+                                <a href="/company?id=9"><span>业务介绍</span></a>
+                                </li>
+                                 <li  class="left_menu1 {% if id == 3 %} left_menu1_cur {% endif %} ">
+                                <a href="/company?id=3"><span>发展历程</span></a>
+                                </li>
+                                 <li  class="left_menu1 {% if id == 4 %} left_menu1_cur {% endif %} ">
+                                <a href="/company?id=4"><span>团队风采</span></a>
+                                </li>
+                            </ul>
+                        </ul>
+                       
+
+                    </div>
+
+                </div>
+                <div class="n_content_right">
+                    <div class="n_content_right_name">
+
+                        <div id="n_content_right_name_r" class="n_content_right_name_r">
+                           
+
+                        </div>
+
+                    </div>
+                    <div class="n_content_right_m">
+
+
+
+
+                        <div id="news_view" class="news_view">
+                            <span id='ShoveWebControl_Text4'>
+                             {{ medium.content | safe}}
+                           
+                            </span>
+                            <div class="news_view_cle1"></div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include "footer.nj" %}
